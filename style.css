@@ -111,6 +111,7 @@ main{
 }
 .btn-toggle-read{
     width:45%;
+    white-space: pre-line;
     margin-right: 5%;
     background-color: #ffcd33;
     border-radius: 10px;
