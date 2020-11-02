@@ -50,7 +50,7 @@ function putBookOnShelf(book){
     el.appendChild(p);
     let btnToggleRead = document.createElement("button");
     btnToggleRead.classList.add('btn-toggle-read');
-    btnToggleRead.textContent = 'Change read status';
+    btnToggleRead.textContent = 'Change read\n status';
     btnToggleRead.addEventListener('click',toggleRead);
     el.appendChild(btnToggleRead);
     let btnRemoveBook = document.createElement("button");
