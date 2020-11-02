@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    padding:0;
+    background: url("pictures/pattern.png");
+    background-size: 200px;
+    background-color: black;
+}
+main{
+    background-color: black;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@font-face{
+    font-family: tahuFont;
+    src: url("Tahu!.ttf");
+    font-family: arlington;
+    src: url("Arlington.ttf");
+}
+#header1{
+    color: rgb(241,90,36);
+    font-size: 5rem;
+    font-family: arlington;
+}
+#book-image{
+    height: 7.5rem;
+    padding: 0 20px;
+}
+#shelves{
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#shelves>div{
+    margin:5%;
+}
+@media (max-width:1000px){
+    main{
+        width:100vw;
+    }
+}
+#open-form{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 8px;
+}
+#open-form:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rebeccapurple;
+    font-weight: bold;
+}
+#open-form:focus{
+    outline: none;
+}
+.shelf{
+    width:100%;
+    height: 10px;
+    background-color: rgb(241,90,36);
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgb(128, 71, 50);
+}
+#container-for-form{
+    border: 1px solid white;
+    padding: 50px;
+    font-size: 1.5rem;
+    display: none;
+    margin: 50px;
+}
+#form{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 5px;
+}
+#form label{
+    color:white;
+}
+#form>input{
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+#form legend{
+    color: white;
+}
+#form div{
+    margin-left: 20px;
+}
+#btn-add{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+#btn-add:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.btn-toggle-read{
+    width:45%;
+    margin-right: 5%;
+    background-color: #ffcd33;
+    border-radius: 10px;
+}
+.btn-toggle-read:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffcd33;
+}
+.btn-toggle-read:focus{
+    outline: none;
+}
+.btn-remove-book{
+    width:45%;
+    white-space: pre-line;
+    margin-left: 5%;
+    background-color: #6a7b06;
+    border-radius: 10px;
+}
+.btn-remove-book:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #6a7b06;
+}
+.btn-remove-book:focus{
+    outline: none;
+}
